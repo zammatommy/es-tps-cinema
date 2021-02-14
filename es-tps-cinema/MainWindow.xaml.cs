@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using System.Threading;
 
 namespace es_tps_cinema
 {
@@ -20,9 +21,25 @@ namespace es_tps_cinema
     /// </summary>
     public partial class MainWindow : Window
     {
+        private bool[] postiCinema = new bool[6];
+        static int buffer = 6;
+        private static object x = new object();
+        
         public MainWindow()
         {
-            InitializeComponent();
+           
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Thread t1 = new Thread(new ThreadStart(CassaNumero1));
+            t1.Start();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Thread t2 = new Thread(new ThreadStart(CassaNumero2));
+            t2.Start();
         }
     }
 }

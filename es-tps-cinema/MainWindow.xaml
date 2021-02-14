@@ -6,7 +6,14 @@
         xmlns:local="clr-namespace:es_tps_cinema"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+    <Grid HorizontalAlignment="Left" Height="306" Margin="0,1,-4,0" VerticalAlignment="Top" Width="796">
+        <Image HorizontalAlignment="Left" Height="306" VerticalAlignment="Top" Width="796"/>
+        <Image Source="cinema.es.jpg" Stretch="Fill"/>
+        <Image HorizontalAlignment="Left" Height="104" Margin="0,311,0,-109" VerticalAlignment="Top" Width="252"/>
+        <Image Margin="0,311,540,-114" Source="cassa.es.jpg" Stretch="Fill"/>
+        <Button x:Name="CassaNumero1btn" Content="Cassa Numero 1" HorizontalAlignment="Left" Height="50" Margin="279,340,0,-84" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="432,340,0,-84" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="92"/>
+        <TextBox HorizontalAlignment="Left" Height="50" Margin="684,340,0,-84" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
+        <Button x:Name="CassaNumero2" Content="&#xD;&#xA;Cassa numero 2&#xD;&#xA;" HorizontalAlignment="Left" Height="52" Margin="552,340,0,-86" VerticalAlignment="Top" Width="101" Click="Button_Click_1"/>
     </Grid>
 </Window>
