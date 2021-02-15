@@ -23,23 +23,45 @@ namespace es_tps_cinema
     {
         private bool[] postiCinema = new bool[6];
         static int buffer = 6;
-        private static object x = new object();
-        
+        private object x = new object();
+        private Semaphore controlliPosti;
+
         public MainWindow()
         {
-           
-        }
-
-        private void Button_Click(object sender, RoutedEventArgs e)
-        {
             Thread t1 = new Thread(new ThreadStart(CassaNumero1));
-            t1.Start();
-        }
-
-        private void Button_Click_1(object sender, RoutedEventArgs e)
-        {
             Thread t2 = new Thread(new ThreadStart(CassaNumero2));
             t2.Start();
+            t2.Start();
+
+
+
+
         }
+
+        private void CassaNumero1()
+        {
+            while (true)
+            {
+                if (postiCinema == )
+                {
+
+                }
+            }
+
+        }
+
+        private void CassaNumero2()
+        {
+            while (true)
+            {
+                if (postiCinema == )
+                {
+
+                }
+            }
+
+        }
+
+
     }
 }
