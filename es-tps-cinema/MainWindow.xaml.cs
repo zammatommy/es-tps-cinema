@@ -21,18 +21,24 @@ namespace es_tps_cinema
     /// </summary>
     public partial class MainWindow : Window
     {
+        Thread t1;
+        Thread t2;
         private bool[] postiCinema = new bool[6];
-        static int buffer = 6;
         private object x = new object();
-        private Semaphore controlliPosti;
 
         public MainWindow()
         {
-            Thread t1 = new Thread(new ThreadStart(CassaNumero1));
-            Thread t2 = new Thread(new ThreadStart(CassaNumero2));
-            t2.Start();
-            t2.Start();
 
+
+
+            InitializeComponent();
+            // Scrivo i posti del cinema se sono liberi
+            postiCinema[1] = false;
+            postiCinema[2] = false;
+            postiCinema[3] = false;
+            postiCinema[4] = false;
+            postiCinema[5] = false;
+            postiCinema[6] = false;
 
 
 
@@ -40,28 +46,65 @@ namespace es_tps_cinema
 
         private void CassaNumero1()
         {
-            while (true)
-            {
-                if (postiCinema == )
-                {
 
+            lock (x)
+            {
+                int posto = 0;
+
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    posto = int.Parse(txtPosto.Text) - 1;
+                }));
+
+                if (postiCinema[posto] == false)
+                {
+                    postiCinema[posto] = true;
+                }
+                else
+                {
+                    MessageBox.Show("Il posto è già occupato");
                 }
             }
-
         }
 
         private void CassaNumero2()
         {
-            while (true)
+            lock (x)
             {
-                if (postiCinema == )
-                {
+                int posto = 0;
 
+                this.Dispatcher.BeginInvoke(new Action(() =>
+                {
+                    posto = int.Parse(txtPosto1.Text) - 1;
+                }));
+
+                if (postiCinema[posto] == false)
+                {
+                    postiCinema[posto] = true;
                 }
+                else
+                {
+                    MessageBox.Show("Il posto è già occupato");
+                }
+
             }
 
         }
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            t1 = new Thread(new ThreadStart(CassaNumero1));
+            t1.Start();
+        }
 
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            t2 = new Thread(new ThreadStart(CassaNumero2));
+            t2.Start();
+        }
 
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }

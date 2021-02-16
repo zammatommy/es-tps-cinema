@@ -8,18 +8,26 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid HorizontalAlignment="Left" Height="306" Margin="0,1,-4,0" VerticalAlignment="Top" Width="796">
         <Image HorizontalAlignment="Left" Height="306" VerticalAlignment="Top" Width="796"/>
-        <Image Source="cinema.es.jpg" Stretch="Fill"/>
-        <Image HorizontalAlignment="Left" Height="104" Margin="0,311,0,-109" VerticalAlignment="Top" Width="252"/>
-        <Image Margin="0,311,540,-114" Source="cassa.es.jpg" Stretch="Fill"/>
-        <Button x:Name="CassaNumero1btn" Content="Cassa Numero 1" HorizontalAlignment="Left" Height="50" Margin="279,340,0,-84" VerticalAlignment="Top" Width="109" Click="Button_Click"/>
-        <TextBox HorizontalAlignment="Left" Height="50" Margin="432,340,0,-84" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="92"/>
-        <TextBox HorizontalAlignment="Left" Height="50" Margin="684,340,0,-84" TextWrapping="Wrap" VerticalAlignment="Top" Width="92"/>
-        <Button Content="&#xD;&#xA;Cassa numero 2&#xD;&#xA;" HorizontalAlignment="Left" Height="52" Margin="552,340,0,-86" VerticalAlignment="Top" Width="101" Click="Button_Click_1"/>
-        <Label Content="Posto 1" HorizontalAlignment="Left" Height="38" Margin="72,210,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontSize="24"/>
-        <Label Content="Posto 2" HorizontalAlignment="Left" Height="38" Margin="186,212,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontSize="24"/>
-        <Label Content="Posto 3" HorizontalAlignment="Left" Height="38" Margin="306,212,0,0" VerticalAlignment="Top" Width="90" Foreground="White" FontSize="24"/>
-        <Label Content="Posto 4" HorizontalAlignment="Left" Height="38" Margin="422,213,0,0" VerticalAlignment="Top" Width="90" FontSize="24" Foreground="White"/>
-        <Label Content="Posto 5" HorizontalAlignment="Left" Height="38" Margin="530,214,0,0" VerticalAlignment="Top" Width="90" FontSize="24" Foreground="white"/>
-        <Label Content="Posto 6" HorizontalAlignment="Left" Height="38" Margin="650,214,0,0" VerticalAlignment="Top" Width="90" FontSize="24" Foreground="white"/>
+        <Image Source="cinema.es.jpg" Stretch="Fill" Margin="0,-3,0,-24" Height="333" VerticalAlignment="Bottom"/>
+        <Button x:Name="CassaNumero1btn" Content="Cassa Numero 1" HorizontalAlignment="Left" Height="50" Margin="10,13,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click"/>
+        <TextBox x:Name="txtPosto" HorizontalAlignment="Left" Height="50" Margin="10,77,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="114"/>
+        <TextBox x:Name="txtPosto1" HorizontalAlignment="Left" Height="50" Margin="672,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="114"/>
+        <Label Content="     Benvenuti, è ora di prenotare il tuo posto!" HorizontalAlignment="Left" Height="51" Margin="175,350,0,-95" VerticalAlignment="Top" Width="567" FontSize="24" FontWeight="Bold" Background="#FFFB1C1C"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="42,200,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 1" HorizontalAlignment="Left" Height="32" Margin="62,222,0,0" VerticalAlignment="Top" Width="70" FontSize="18"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="168,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 2" HorizontalAlignment="Left" Height="30" Margin="191,221,0,0" VerticalAlignment="Top" Width="71" FontSize="18"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="292,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 3" HorizontalAlignment="Left" Height="38" Margin="310,218,0,0" VerticalAlignment="Top" Width="72" FontSize="18" RenderTransformOrigin="0.466,0.342"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="80" Margin="420,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 4" HorizontalAlignment="Left" Height="38" Margin="440,217,0,0" VerticalAlignment="Top" Width="70" Foreground="Black" FontSize="18"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="550,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 5" HorizontalAlignment="Left" Height="38" Margin="570,217,0,0" VerticalAlignment="Top" Width="70" Foreground="Black" FontSize="18"/>
+        <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="670,196,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
+        <Label Content="Posto 6" HorizontalAlignment="Left" Height="38" Margin="690,217,0,0" VerticalAlignment="Top" Width="70" Foreground="Black" FontSize="18"/>
+        <Button x:Name="CassaNumero2btn" Content="Cassa Numero 2" HorizontalAlignment="Left" Height="50" Margin="677,12,0,0" VerticalAlignment="Top" Width="110" Click="Button_Click_2"/>
+        <Button Content="&#xD;&#xA;SVUOTA CINEMA&#xD;&#xA;" HorizontalAlignment="Left" Height="54" Margin="16,348,0,-96" VerticalAlignment="Top" Width="116" Click="Button_Click_2"/>
+
+
     </Grid>
 </Window>
