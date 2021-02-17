@@ -82,7 +82,7 @@ namespace es_tps_cinema
             t1.Start();
         }
 
-        private void Button_Click_2(object sender, RoutedEventArgs e)
+        private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             posto = 0;
 
@@ -93,6 +93,11 @@ namespace es_tps_cinema
 
             t2 = new Thread(new ThreadStart(CassaNumero2));
             t2.Start();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+
         }
     }
 }
