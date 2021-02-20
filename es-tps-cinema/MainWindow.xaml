@@ -9,7 +9,7 @@
     <Grid HorizontalAlignment="Left" Height="306" Margin="0,1,-4,0" VerticalAlignment="Top" Width="796">
         <Image HorizontalAlignment="Left" Height="306" VerticalAlignment="Top" Width="796"/>
         <Image Source="cinema.es.jpg" Stretch="Fill" Margin="0,-3,0,-24" Height="333" VerticalAlignment="Bottom"/>
-        <Button x:Name="CassaNumero1btn" Content="Cassa Numero 1" HorizontalAlignment="Left" Height="50" Margin="14,12,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click"/>
+        
         <TextBox x:Name="txtPosto" HorizontalAlignment="Left" Height="30" Margin="12,101,0,0" TextWrapping="Wrap" Text="&#xD;&#xA;" VerticalAlignment="Top" Width="117"/>
         <TextBox x:Name="txtPosto1" HorizontalAlignment="Left" Height="30" Margin="662,106,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="122"/>
         <Label Content="     Benvenuti, è ora di prenotare il tuo posto!" HorizontalAlignment="Left" Height="51" Margin="175,350,0,-95" VerticalAlignment="Top" Width="567" FontSize="24" FontWeight="Bold" Background="#FFFB1C1C"/>
@@ -25,11 +25,11 @@
         <Label x:Name="lblPosto5" Content="Posto 5" HorizontalAlignment="Left" Height="38" Margin="570,217,0,0" VerticalAlignment="Top" Width="70" Foreground="Black" FontSize="18"/>
         <Ellipse Fill="#FFF4F4F5" HorizontalAlignment="Left" Height="78" Margin="670,192,0,0" Stroke="Black" VerticalAlignment="Top" Width="108"/>
         <Label x:Name="lblPosto6" Content="Posto 6" HorizontalAlignment="Left" Height="38" Margin="692,214,0,0" VerticalAlignment="Top" Width="70" Foreground="Black" FontSize="18"/>
-        <Button x:Name="CassaNumero2btn" Content="Cassa Numero 2" HorizontalAlignment="Left" Height="50" Margin="663,15,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_1"/>
+        <Button Content="Cassa Numero 2" HorizontalAlignment="Left" Height="50" Margin="663,15,0,0" VerticalAlignment="Top" Width="117" Click="Button_Click_1"/>
         <Button Content="&#xD;&#xA;SVUOTA CINEMA&#xD;&#xA;" HorizontalAlignment="Left" Height="54" Margin="16,348,0,-96" VerticalAlignment="Top" Width="116" Click="Button_Click_2"/>
         <Label Content="Inserisci i posti " HorizontalAlignment="Left" Height="31" Margin="12,72,0,0" VerticalAlignment="Top" Width="118" Foreground="Black" FontSize="16" BorderBrush="Black" Background="#FFAE9D9D"/>
         <Label Content="Inserisci i posti" HorizontalAlignment="Left" Height="31" Margin="664,75,0,0" VerticalAlignment="Top" Width="118" Foreground="Black" FontSize="16" BorderBrush="Black" Background="#FFAE9D9D"/>
-
+        <Button Content="Cassa Numero 1" HorizontalAlignment="Left" Height="50" Margin="14,12,0,0" VerticalAlignment="Top" Width="112" Click="Button_Click"/>
 
     </Grid>
 </Window>
